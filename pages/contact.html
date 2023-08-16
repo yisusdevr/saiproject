@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAI - Contactanos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<script src="../js/effects6.js"></script>
+
+<link rel="icon" href="../img/sai_logo.png">
+
+</head>
+<body onload="typeWriter()" onmousemove="typeSlogan()" >
+    <nav class="navbar navbar-expand-lg  fixed-top"data-bs-theme="dark"  >
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/sai_logo.png" alt="Logo de SAI" class="navbar-logo" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <br>
+<br>
+<br>
+
+
+    <header class="text-white text-center py-5">
+        <h1 id="title"></h1>
+        <h2 id="eslogan"></h2>
+ 
+    </header>
+
+
+    <br>
+<br>
+<br>
+   
+
+
+<div class="card-group container"  >
+    <div class="container mt-5">
+        <h1>Contacta con Nosotros</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" style="    color: #afafaf;   background-color: #160404;" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email"style="      color: #afafaf; background-color: #160404;" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control"style="     color: #afafaf;  background-color: #160404;" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn " style="    color: #afafaf;   background-color: #160404;" >Enviar</button>
+        </form>
+    </div>
+  </div>
+  
+  </div>
+  
+
+    <br>
+    <br>
+    <br>
+
+  
+    </div>
+   
+    </div>
+<br>
+<br>
+<br>
+
+    <footer class=" text-white text-center py-3">
+        <p>Proyecto Tecnico Cientifico | SAI</p>
+        <p>© 2023 Copyright</p>
+        <div class="social-icons">
+            <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/sai/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contacto@sai.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $('.fadeIn').each(function() {
+                    var position = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    
+                    if (scroll > position - windowHeight + 200) {
+                        $(this).addClass('visible');
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    
+</body>
+</html>

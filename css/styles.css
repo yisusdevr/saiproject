@@ -1,0 +1,114 @@
+body {
+    background-color: #110404;
+    color: #afafaf;
+    font-family: 'Jost', sans-serif;
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.navbar {
+    background-color: #160404;
+}
+.form-control{
+    background-color: #160404;
+    border: none;
+    color: #afafaf;
+
+}
+
+footer {
+    background-color: #160404;
+}
+.card {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+    position: relative;
+    opacity: 0.5;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+#title {
+    font-weight: 900;
+    font-size: 1000%;
+    color: #bebcbc;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+.card {
+    background-color: #160404;
+
+    color: rgb(150, 150, 150);
+}
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #bbb;
+}
+
+.footer .btn {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.footer .btn:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+.fadeIn {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+
+.fadeIn.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+h1 {
+    text-align: center;
+}
+p {
+    color: #afafaf;
+
+}
