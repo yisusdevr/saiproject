@@ -7,6 +7,10 @@ body {
 .navbar {
     background-color: #160404;
 }
+a {
+    text-decoration: none;
+}
+
 .form-control{
     background-color: #160404;
     border: none;
@@ -42,9 +46,24 @@ footer {
     transform: translateY(0);
 }
 
+#pepe {
+    background-color: transparent;
+    border: 2px solid #110404; 
+    color: #fff; 
+  }
+  
+  #pepe:hover {
+    background-color: #220808;
+  }
 
-
-
+#comprarBtn {
+    background-color: transparent;
+    border: 2px solid #110404; 
+    color: #fff;
+}
+#comprarBtn:hover{
+    background-color: #220808;
+}
 
 
 #title {
@@ -111,4 +130,17 @@ h1 {
 p {
     color: #afafaf;
 
+}
+
+.form-control {
+    background-color: #160404 !important; 
+}
+
+.btn-primary {
+    background-color: #2b0d0d;
+}
+
+
+#carouselExampleSlidesOnly.carousel-inner{
+    transition-duration: 2s;
 }
