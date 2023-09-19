@@ -1,25 +1,25 @@
 body {
-    background-color: #110404;
-    color: #afafaf;
+    background-color: #130F0F;
+    color: #8C8C8C;
     font-family: 'Jost', sans-serif;
 }
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 .navbar {
-    background-color: #160404;
+    background-color: #1F1919;
 }
 a {
     text-decoration: none;
 }
 
 .form-control{
-    background-color: #160404;
+    background-color: #1F1919;
     border: none;
-    color: #afafaf;
+    color: #8C8C8C;
 
 }
 
 footer {
-    background-color: #160404;
+    background-color: #1F1919;
 }
 .card {
     width: 300px;
@@ -48,21 +48,21 @@ footer {
 
 #pepe {
     background-color: transparent;
-    border: 2px solid #110404; 
+    border: 2px solid #130F0F; 
     color: #fff; 
   }
   
   #pepe:hover {
-    background-color: #220808;
+    background-color: #130F0F;
   }
 
 #comprarBtn {
     background-color: transparent;
-    border: 2px solid #110404; 
+    border: 2px solid #1b1214; 
     color: #fff;
 }
 #comprarBtn:hover{
-    background-color: #220808;
+    background-color: #130F0F;
 }
 
 
@@ -86,7 +86,7 @@ footer {
     color: #fff;
 }
 .card {
-    background-color: #160404;
+    background-color: #1F1919;
 
     color: rgb(150, 150, 150);
 }
@@ -128,16 +128,16 @@ h1 {
     text-align: center;
 }
 p {
-    color: #afafaf;
+    color: #8C8C8C;
 
 }
 
 .form-control {
-    background-color: #160404 !important; 
+    background-color: #1F1919 !important; 
 }
 
 .btn-primary {
-    background-color: #2b0d0d;
+    background-color: #130F0F;
 }
 
 
