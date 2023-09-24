@@ -4,53 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAI - Contactanos</title>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/styles2.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-
-
-<link rel="icon" href="../img/sai_logo.png">
+<link rel="stylesheet" href="../css/licenses.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<link rel="icon" href="../img/logo_claro.png">
+<script src="../js/menuPages.js"></script>
+<script src="../js/footer.js"></script>
 
 </head>
-<body onload="typeWriter()" onmousemove="typeSlogan()" >
-    <nav class="navbar navbar-expand-lg  fixed-top"data-bs-theme="dark"  >
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/sai_logo.png" alt="Logo de SAI" class="navbar-logo" width="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contactanos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="requirements.html">Cómo funciona</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="license.html">Licencia del programa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ptc.html">Tematica PTC</a>
-                      </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body onload="typeWriter()" onmousemove="typeSlogan()" class="dark-theme">
+    <div id="menuContenedor"></div>
     
     <br>
 <br>
@@ -64,7 +35,7 @@
 
 
     <header class="text-white text-center py-5">
-        <h1 id="title"></h1>
+        <h1 id="title" style="font-size: 400%;"></h1>
         <h2 id="eslogan"></h2>
  
     </header>
@@ -76,53 +47,165 @@
    
 
             
-<section style="background-color: #110404">
-    <div class="container py-5 justify-content-center" >
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6 col-xl-4">
-                <div class="card" style="border-radius: 15px; font-size: 1.25rem;">
-                    <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light"
-                        data-mdb-ripple-color="light">
-                        <img src="https://i.imgur.com/MGBPppl.png"
-                            style="border-top-left-radius: 15px; border-top-right-radius: 15px;" class="img-fluid"
-                            alt="Licencia de Software" />
+<section >
+    <div class="container py-5 justify-content-center">
+      <div class="row justify-content-around">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="../img/licencia1.png" class="img-fluid" alt="Licencia de Software" />
+              <a href="#!">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <div class="card-body pb-0">
+              <div class="mb-2">
+                <h5 class="card-title" style="color: #8C8C8C;">Licencia Inicial</h5>
+                
+                <p class="card-text mt-3">Descripción: <span id="descripcion">Esta licencia te permite usar las funcionalidades basicas 
+                  del programa.
+                </span></p>
+              </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body pb-0 mb-3">
+              <div class="d-flex justify-content-between text-white">
+                <p class="card-text">Subtotal: <span class="text-white small" id="precio">$70</span></p>
+              </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center pb-2 mb-1" id="boton">
+                <button type="button" class="btn btn-primary btn-lg comprarBtn" id="comprarInicial" onclick="confirmarCompra('$70')">Comprar ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="../img/licencia2.png" class="img-fluid" alt="Licencia de Software" />
+              <a href="#!">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <div class="card-body pb-0">
+              <div class="mb-2">
+                <h5 class="card-title" style="color: #8C8C8C;">Licencia Premiun</h5>
+                <p class="card-text mt-3">Descripción: <span id="descripcion">Funcionalidades por defecto del programa y soporte.</span></p>
+              </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body pb-0 mb-3">
+              <div class="d-flex justify-content-between text-white">
+                <p class="card-text">Subtotal: <span class="text-white small" id="precio">$180</span></p>
+              </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center pb-2 mb-1" id="boton">
+                <button type="button" class="btn btn-primary btn-lg comprarBtn" id="comprarPremium" onclick="confirmarCompra('$180')">Comprar ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="../img/licencia3.png" class="img-fluid" alt="Licencia de Software" />
+              <a href="#!">
+                <div class="mask"></div>
+              </a>
+            </div>
+            <div class="card-body pb-0">
+              <div class="mb-2">
+                <h5 class="card-title" style="color: #8C8C8C;">Licencia Premiun Plus+</h5>
+                <p class="card-text mt-3">Descripción: <span id="descripcion">Mayor soporte, funcionalidades completas del sistema.</span></p>
+              </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body pb-0 mb-3">
+              <div class="d-flex justify-content-between text-white">
+                <p class="card-text">Subtotal: <span class="text-white small" id="precio">$250</span></p>
+              </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center pb-2 mb-1" id="boton">
+                <button type="button" class="btn btn-primary btn-lg comprarBtn" id="comprarPremium+" onclick="confirmarCompra('$250')">Comprar ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+            
+          </div>
+        </div>
+  </section>
+  <section >
+    <div class="container py-5 justify-content-center">
+        <div class="row justify-content-around">
+            <!-- Tarjeta 3 - Manual de Usuario -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+                        <!-- Imagen de Manual de Usuario -->
+                        <img src="../img/manualIcon2.png" class="img-fluid" alt="Manual de Usuario" />
                         <a href="#!">
                             <div class="mask"></div>
                         </a>
                     </div>
                     <div class="card-body pb-0">
                         <div class="mb-2">
-                            <h5 class="card-title">Selecciona una licencia:</h5>
-                            <select class="form-select" id="selectorLicencia">
-                                <option value="ninguno">Selecciona una Opción</option>
-                                <option value="sencilla" id="opcionSencilla">Licencia Sencilla</option>
-                                <option value="premium" id="opcionPremium">Licencia Premium</option>
-                                <option value="empresa" id="opcionEmpresa">Licencia de Empresa</option>
-                            </select>
-                            <p class="card-text mt-3">Descripción: <span id="descripcion">Debes seleccionar un tipo de licencia
-                                    para observar la descripción
-                                </span></p>
-                        </div>
-                    </div>
-                    <hr class="my-0" />
-                    <div class="card-body pb-0 mb-3">
-                        <div class="d-flex justify-content-between text-white">
-                            <p class="card-text">Subtotal: <span class="text-white small" id="precio" >$</span></p>
-                            
+                            <h5 class="card-title" style="color: #8C8C8C;">Manual de Usuario</h5>
+                            <p class="card-text mt-3">Le recomendamos que consulte nuestro manual de usuario para obtener una comprensión detallada de cómo utilizar nuestro sistema.</p>
                         </div>
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center pb-2 mb-1"></a>
-                            <button type="button" class="btn btn-primary btn-lg" id="comprarBtn" >Comprar ahora</button>
+                        <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
+                            <!-- Botón para descargar el Manual de Usuario -->
+                            <a download= "Manual de usuario SAI" href="Manual de usuario SAI.pdf" class="btn btn-primary btn-lg" id="pepe">Descargar</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Tarjeta 4 - SAI (Inicialmente oculta) -->     
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+                            <!-- Imagen del SAI -->
+                            <img src="../img/appDescarga.png" class="img-fluid" alt="SAI" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <div class="card-body pb-0">
+                            <div class="mb-2">
+                                <h5 class="card-title" style="color: #8C8C8C;">SAI</h5>
+                                <p class="card-text mt-3">Le extendemos una cordial invitación a descargar SAI y experimentar una mejora significativa en la eficiencia de su empresa.</p>
+                            </div>
+                        </div>
+                        <hr class="my-0" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
+                                <!-- Botón para descargar el SAI -->
+                                <a download="SAI system" href="#" class="btn btn-primary btn-lg" id="pepe">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-</section>
-
+  </section>
   
   </div>
   
@@ -138,19 +221,34 @@
 <br>
 <br>
 <br>
+<div id="footer"></div>
 
-    <footer class=" text-white text-center py-3">
-        <p>Proyecto Tecnico Cientifico | SAI</p>
-        <a>© 2023 Copyright</a>
-        <a class=" text-white text-center py-3" href="https://www.ricaldone.edu.sv/">SAI 2023</a>
-        <br>
-        <br>
-        <div class="social-icons">
-            <a href="https://wa.me/message/QMXVLYLENP2BO1" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/saiitr/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:saiitrptc@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-    </footer>
+
+<script>
+  function confirmarCompra(precio) {
+    Swal.fire({
+      title: '¿Estás seguro de que deseas comprar?',
+      text: 'El subtotal de la compra es: ' + precio,
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Sí',
+      cancelButtonText: 'No'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        compraExitosa();
+      }
+    });
+  }
+
+  function compraExitosa() {
+    Swal.fire(
+      '¡Compra exitosa!',
+      'Gracias por tu compra. El proceso de compra se ha completado con éxito.',
+      'success'
+    );
+  }
+</script>
+
 
     <script>
         $(document).ready(function() {
@@ -169,10 +267,10 @@
         
     </script>
     <script src="../js/effects9.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../js/cargarMenuPages.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/cargarfooter.js"></script>
 
     
     
