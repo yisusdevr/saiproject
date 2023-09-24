@@ -1,20 +1,73 @@
-body {
+body.dark-theme {
     background-color: #130F0F;
     color: #8C8C8C;
     font-family: 'Jost', sans-serif;
 }
+
+body.dark-theme .navbar {
+    background-color: #1F1919 !important; /* Aplicando color de fondo para tema oscuro */
+}
+
+body.dark-theme .navbar .nav-link {
+    color: #c9c9c9 !important; /* Cambiando el color del texto en los enlaces para tema oscuro */
+}
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 .navbar {
     background-color: #1F1919;
 }
+
+body.dark-theme .gestion-propiedades-text {
+    color: #c9c9c9 !important; /* Cambia el color del texto para tema oscuro */
+}
+
+body.dark-theme .registro-clientes-text {
+    color: #c9c9c9 !important; /* Cambia el color del texto para tema oscuro */
+}
+
+body.dark-theme .card{
+    background-color: #1F1919 !important; /* Color de fondo para las cards en modo oscuro */
+    color: #c9c9c9 !important; /* Color del texto para las cards en modo oscuro */
+}
+
+body.dark-theme .card .card-text{
+    color: #c9c9c9 !important; /* Color del texto para las cards en modo oscuro */
+}
+
+
+body.dark-theme .eslogan {
+    color: #8C8C8C;
+}
+
+body.dark-theme .footer {
+    background-color: #1F1919; /* Color de fondo para el footer en modo oscuro */
+    color: #c9c9c9; /* Color del texto para el footer en modo oscuro */
+}
+
+body.dark-theme .footer .text-white {
+    color: #c9c9c9; /* Cambia el color del texto en modo oscuro */
+}
+
+body.dark-theme .footer .social-icons a {
+    color: #c9c9c9; /* Cambia el color de los iconos en modo oscuro */
+}
+
+body.dark-theme .footer .ptcfooter{
+    color: #c9c9c9;
+}
+
+body.dark-theme .footer .footercopy{
+    color: #c9c9c9;
+}
+
 a {
     text-decoration: none;
 }
 
 .form-control{
-    background-color: #1F1919;
+    background-color: #826e6e;
     border: none;
-    color: #8C8C8C;
+    color: #000000;
 
 }
 
@@ -46,24 +99,25 @@ footer {
     transform: translateY(0);
 }
 
+#boton button{
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+}
+
+#boton button:hover{
+    background-color: #1D1919;
+}
+
 #pepe {
     background-color: transparent;
-    border: 2px solid #130F0F; 
-    color: #fff; 
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
   }
   
   #pepe:hover {
-    background-color: #130F0F;
+    background-color: #1D1919;
   }
-
-#comprarBtn {
-    background-color: transparent;
-    border: 2px solid #1b1214; 
-    color: #fff;
-}
-#comprarBtn:hover{
-    background-color: #130F0F;
-}
 
 
 #title {
@@ -133,7 +187,7 @@ p {
 }
 
 .form-control {
-    background-color: #1F1919 !important; 
+    background-color: #c9c9c9 !important; 
 }
 
 .btn-primary {
@@ -144,3 +198,14 @@ p {
 #carouselExampleSlidesOnly.carousel-inner{
     transition-duration: 2s;
 }
+
+
+
+
+
+
+
+
+
+
+

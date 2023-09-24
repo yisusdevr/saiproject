@@ -1,5 +1,5 @@
 function generarMenuPages(){
-    const menuPages = `<nav class="navbar navbar-expand-lg  fixed-top"data-bs-theme="dark"  >
+    const menuPages = `<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <a class="navbar-brand" href="../index.html">
             <img src="../img/logo_claro.png" alt="Logo de SAI" class="navbar-logo" width="100">
@@ -22,11 +22,20 @@ function generarMenuPages(){
                   <a class="nav-link" href="requirements.html">Cómo funciona</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="license.html">Licencia del programa</a>
+                  <a class="nav-link" href="license.html">Licencias</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="ptc.html">Tematica PTC</a>
                 </li>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch">
+                    <div class="theme-icon">
+                        <i class="bi bi-moon-fill"></i>
+                    </div>
+                    <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                    <div class="slider round"></div>
+                </label>
+                </div>
             </ul>
         </div>
     </div>
@@ -34,3 +43,18 @@ function generarMenuPages(){
 
 return menuPages;
 }
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle("dark-theme");
+    body.classList.toggle("light-theme");
+
+    const isDark = body.classList.contains("dark-theme");
+    const themeToggle = document.getElementById("theme-toggle");
+
+    if (isDark) {
+        themeToggle.innerText = "Cambiar a Modo Claro";
+    } else {
+        themeToggle.innerText = "Cambiar a Modo Oscuro";
+    }
+}
+
