@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .bg-image img {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -56,4 +57,64 @@
 
 .comprarBtn:focus, .comprarBtn:active {
     box-shadow: 0 0 0 0.2rem rgba(27, 18, 20, 0.25);
+=======
+.bg-image img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+    width: 200%;  
+    height: 400%;
+    
+  }
+
+  .card {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #130F0F;
+    box-shadow: 0px 0px 10px rgba(107, 107, 107, 0.2);
+    
+    position: relative;
+    opacity: 0.5;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.card-body {
+    padding: 1.25rem;
+  }
+
+  .comprarBtn {
+    background-color: transparent;
+    border: 2px solid #1b1214; 
+    color: #8C8C8C;
+    border-color: #1b1214;
+}
+.comprarBtn:hover:hover{
+    background-color: #130F0F;
+}
+
+.comprarBtn:active {
+    background-color: #bdbdbd;
+    border-color: #1b1214;
+}
+
+.comprarBtn:focus, .comprarBtn:active {
+    box-shadow: 0 0 0 0.2rem rgba(27, 18, 20, 0.25);
+>>>>>>> 9389d66f73e16b2ada8633d5cb59078956fe0568
 }

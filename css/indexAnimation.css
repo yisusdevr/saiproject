@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -23,4 +24,31 @@
   
   .icon:hover {
     filter: brightness(1.5); /* Ajusta el brillo al pasar el ratón */
+=======
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .icon {
+    width: 40%; /* Tamaño del icono */
+    fill: #686666; /* Color del icono */
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    filter: brightness(1.5); /* Ajusta el brillo al pasar el ratón */
+>>>>>>> 9389d66f73e16b2ada8633d5cb59078956fe0568
   }
