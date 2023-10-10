@@ -60,6 +60,96 @@ body.dark-theme .footer .footercopy{
     color: #c9c9c9;
 }
 
+body.dark-theme #pepe button{
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+}
+
+body.dark-theme #pepe button:hover{
+    background-color: #1D1919;
+}
+
+body.dark-theme #pepe {
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+  }
+  
+body.dark-theme #pepe:hover {
+    background-color: #1D1919;
+  }
+
+--------------------------------------------------------
+
+body.dark-theme #comprarInicial button{
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+}
+
+body.dark-theme #comprarInicial button:hover{
+    background-color: #1D1919;
+}
+
+body.dark-theme #comprarInicial {
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+  }
+  
+body.dark-theme #comprarInicial:hover {
+    background-color: #1D1919;
+  }
+
+
+-------------------------------------------------------------
+
+body.dark-theme #comprarPremium button{
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+}
+
+body.dark-theme #comprarPremium button:hover{
+    background-color: #1D1919;
+}
+
+body.dark-theme #comprarPremium {
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+  }
+  
+body.dark-theme #comprarPremium:hover {
+    background-color: #1D1919;
+  }
+
+--------------------------------------------------------------
+
+body.dark-theme #comprarPremiumP button{
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+}
+
+body.dark-theme #comprarPremiumP button:hover{
+    background-color: #1D1919;
+}
+
+body.dark-theme #comprarPremiumP {
+    background-color: transparent;
+    border: 2px solid #261F1F; 
+    color: #E0E0E0; 
+  }
+  
+body.dark-theme #comprarPremiumP:hover {
+    background-color: #1D1919;
+  }
+
+
+------------------------------------------------------------------  
+
 a {
     text-decoration: none;
 }
@@ -192,20 +282,9 @@ p {
 
 .btn-primary {
     background-color: #130F0F;
-}
+  
 
 
 #carouselExampleSlidesOnly.carousel-inner{
     transition-duration: 2s;
-}
-
-
-
-
-
-
-
-
-
-
-
+}}
