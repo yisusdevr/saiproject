@@ -285,6 +285,40 @@ p {
   
 
 
-#carouselExampleSlidesOnly.carousel-inner{
+#carouselExampleSlidesOnly.carousel-container{
     transition-duration: 2s;
 }}
+
+.navbar {
+    backdrop-filter: blur(30px); /* Ajusta el valor del desenfoque según tu preferencia */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la transparencia del fondo */
+  }
+  
+  /* Estilos para los enlaces del navbar */
+  .navbar .nav-link {
+    color: #ffffff; /* Color del texto */
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+  }
+
+.smooth-navbar .nav-link:hover {
+    border-radius: 50px; /* Cambia el radio en hover para que sea más redondeado */
+    background-color: #3f3f3f7e; /* Color de fondo con transparencia */
+    color: #c9c9c9; /* Color del texto al pasar el mouse */
+}
+
+.navbar-smooth-navbar {
+    backdrop-filter: blur(15px); /* Ajusta el valor del desenfoque según tu preferencia */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la transparencia del fondo */
+  }
+
+body.dark-theme #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Redondeamos el interruptor de tema */
+body.dark-theme .slider.round {
+    border-radius: 34px;
+}

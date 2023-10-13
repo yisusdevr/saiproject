@@ -1,6 +1,6 @@
 function generarMenuIndex(){
     const menuIndex = `
-    <nav class="navbar navbar-expand-lg fixed-top light-theme">
+    <nav class="navbar navbar-expand-lg fixed-top light-theme smooth-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo_claro.png" alt="Logo de SAI" class="navbar-logo" width="100">
@@ -41,6 +41,7 @@ function generarMenuIndex(){
             </div>
         </div>
     </nav>`;
+    
 
     return menuIndex;
 }
@@ -59,4 +60,5 @@ function toggleTheme() {
         themeToggle.innerText = "Cambiar a Modo Oscuro";
     }
 }
+
 

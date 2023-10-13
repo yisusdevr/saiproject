@@ -39,8 +39,12 @@ body.light-theme .card .card-img{
 }
 
 
-body.light-theme .eslogan {
-    color: #8C8C8C;
+body.light-theme #eslogan {
+    color: #b6b6b6;
+}
+
+body.light-theme #eslogan4 {
+    color: #b6b6b6;
 }
 
 body.light-theme .footer {
@@ -221,4 +225,55 @@ input:checked + .slider:before {
     transform: translateY(-50%);
     left: 5px;
     color: #bebebe;
+}
+
+body.light-theme .smooth-navbar .nav-link {
+    border-radius: 20px; /* Ajusta el radio de las esquinas según lo desees */
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+body.light-theme .smooth-navbar .nav-link:hover {
+    border-radius: 50px; /* Cambia el radio en hover para que sea más redondeado */
+    background-color: #7a7a7a70; /* Color de fondo con transparencia */
+    color: #c9c9c9; /* Color del texto al pasar el mouse */
+}
+
+/* Estilos para la transparencia y efecto de partículas */
+body.light-theme .smooth-navbar {
+    background: rgba(29, 29, 29, 0.5); /* Fondo con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+/* Estilos para la transparencia y efecto de partículas */
+body.ligth-theme .smooth-navbar {
+    background: rgba(29, 29, 29, 0.5); /* Fondo con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+body.light-theme .navbar {
+    background: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+/* Redondeamos el interruptor de tema */
+body.light-theme .slider.round {
+    border-radius: 34px;
+}
+
+/* Añadimos estilos personalizados para el efecto de partículas */
+body.light-theme #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body.light-theme.navbar {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* Redondeamos el interruptor de tema */
+body.light-theme .slider.round {
+    border-radius: 34px;
 }
