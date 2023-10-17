@@ -22,6 +22,108 @@
 
 
 <body onload="typeWriter()" onmousemove="typeSlogan()" class="dark-theme">
+  <style>
+  
+    #texto {
+        position: absolute;
+        color: #fff;
+        font-size: 48px;
+       
+        text-align: center;
+        width: 100%;
+        top: 40%;
+    }
+</style>
+</head>
+<body>
+<canvas id="canvas" style="height: 75vh; width: 100%;"></canvas>
+<div id="texto">¡Primer Lugar EXPO 2023!</div>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const texto = document.getElementById('texto');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const fireworks = [];
+
+    function crearFuego(x, y) {
+        const firework = {
+            x: x,
+            y: y,
+            color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+            radius: 4, // Tamaño más grande
+            vx: Math.random() * 6 - 3,
+            vy: Math.random() * -12 - 6, // Velocidad vertical mayor
+            opacity: 1
+        };
+
+        fireworks.push(firework);
+    }
+
+    function dibujarFuegosArtificiales() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        fireworks.forEach((firework, index) => {
+            firework.x += firework.vx;
+            firework.y += firework.vy;
+            firework.vy += 0.2; // Gravedad más fuerte
+            firework.opacity -= 0.01;
+
+            if (firework.opacity <= 0) {
+                fireworks.splice(index, 1);
+            }
+
+            ctx.beginPath();
+            ctx.arc(firework.x, firework.y, firework.radius, 0, Math.PI * 2);
+            ctx.fillStyle = firework.color;
+            ctx.globalAlpha = firework.opacity;
+            ctx.fill();
+            ctx.globalAlpha = 1;
+        });
+
+        requestAnimationFrame(dibujarFuegosArtificiales);
+    }
+
+    function crearExplosion(x, y) {
+        for (let i = 0; i < 60; i++) { // Más partículas de explosión
+            const angle = (Math.PI * 2) * (i / 60);
+            const radius = Math.random() * 6 + 4; // Partículas más grandes
+            const vx = Math.cos(angle) * radius;
+            const vy = Math.sin(angle) * radius;
+            fireworks.push({
+                x: x,
+                y: y,
+                color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+                radius: 3, // Tamaño de las partículas de explosión
+                vx: vx,
+                vy: vy,
+                opacity: 1
+            });
+        }
+    }
+
+    function iniciarFuegosArtificiales() {
+        setInterval(() => {
+            const x = Math.random() * canvas.width;
+            const y = canvas.height;
+            crearFuego(x, y);
+        }, 100); // Fuegos artificiales más frecuentes
+
+        setInterval(() => {
+            const x = Math.random() * canvas.width;
+            const y = Math.random() * canvas.height * 0.5;
+            crearExplosion(x, y);
+        }, 800); // Explosiones más frecuentes
+
+        dibujarFuegosArtificiales();
+    }
+
+    iniciarFuegosArtificiales();
+</script>
+</body>
   <div id="particles-js"></div>
   <div id="menuContenedor"></div>
 <br>
